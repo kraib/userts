@@ -17,3 +17,9 @@ And then run the grunt task to compile the TypeScript:
 To start the server run:
 
 `$ npm start`
+
+## Tests
+
+To run tests:
+
+`$ npm test`
