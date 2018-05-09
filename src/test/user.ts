@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { suite, test } from "mocha-typescript";
 import { IUser } from "../interfaces/user";
 import { IUserModel } from "../models/user";

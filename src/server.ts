@@ -1,3 +1,4 @@
+/* tslint:disable */
 import * as bodyParser from "body-parser";
 import * as cookieParser from "cookie-parser";
 import * as express from "express";
@@ -47,7 +48,7 @@ export class Server {
     this.app.use(methodOverride());
     global.Promise = require("q").Promise;
     mongoose.Promise = global.Promise;
-    let connection: mongoose.Connection = mongoose.createConnection(
+    const connection: mongoose.Connection = mongoose.createConnection(
       MONGODB_CONNECTION
     );
     this.model.user = connection.model<IUserModel>("User", userSchema);

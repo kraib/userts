@@ -12,7 +12,7 @@ export class IndexRoute extends BaseRoute {
 
   public index(req: Request, res: Response, next: NextFunction) {
     this.title = "Welcome";
-    const options: Object = {
+    const options: object = {
       message: "Welcome"
     };
     this.render(req, res, "index", options);
