@@ -12,7 +12,7 @@ class UserTest {
   public static before() {
     global.Promise = require("q").Promise;
     mongoose.Promise = global.Promise;
-    const MONGODB_CONNECTION: string = "mongodb://localhost:27017/heros";
+    const MONGODB_CONNECTION: string = "mongodb://localhost:27017/sample";
     let connection: mongoose.Connection = mongoose.createConnection(
       MONGODB_CONNECTION
     );
@@ -24,8 +24,8 @@ class UserTest {
   constructor() {
     this.data = {
       email: "foo@bar.com",
-      firstName: "Brian",
-      lastName: "Love"
+      firstName: "Kraiba",
+      lastName: "Semakula"
     };
   }
 
