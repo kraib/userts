@@ -23,3 +23,9 @@ To start the server run:
 To run tests:
 
 `$ npm test`
+
+## Lint
+
+To run tests:
+
+`$ npm run lint`
